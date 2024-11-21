@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add to Cart Success</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Add to Cart Success Message -->
+  <div class="cart-success" id="cartSuccess">
+    <p>Item added to cart successfully!</p>
+    <button class="close-btn" onclick="closeMessage()">Close</button>
+  </div>
+
+  <!-- Sample Button to Simulate Add to Cart -->
+  <button class="add-to-cart-btn" onclick="showMessage()">Add to Cart</button>
+
+  <script>
+    // Show the success message
+    function showMessage() {
+      document.getElementById('cartSuccess').classList.add('show');
+    }
+
+    // Close the success message
+    function closeMessage() {
+      document.getElementById('cartSuccess').classList.remove('show');
+    }
+  </script>
+</body>
+</html>

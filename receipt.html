@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Receipt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .receipt-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 20px 30px;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .receipt-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .receipt-header h1 {
+            font-size: 2rem;
+            color: #28a745;
+        }
+
+        .receipt-header p {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+
+        .order-details {
+            margin: 20px 0;
+        }
+
+        .order-details table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .order-details th, .order-details td {
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .order-details th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+
+        .total-amount {
+            text-align: right;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .receipt-footer {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .receipt-footer a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #007bff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .receipt-footer a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="receipt-container">
+        <div class="receipt-header">
+            <h1>Order Placed Successfully!</h1>
+            <p>Thank you for your order. Here are your order details:</p>
+        </div>
+
+        <div class="order-details">
+            <h2>Order Summary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Baju Melayu</td>
+                        <td>1</td>
+                        <td>RM399.00</td>
+                    </tr>
+                    <tr>
+                        <td>White Sneakers</td>
+                        <td>1</td>
+                        <td>RM199.00</td>
+                    </tr>
+                    <tr>
+                        <td>Brown Suits</td>
+                        <td>1</td>
+                        <td>RM299.00</td>
+                    </tr>
+                    <tr>
+                        <td>Blue Stripes Shirt</td>
+                        <td>1</td>
+                        <td>RM99.00</td>
+                    </tr>
+                    <tr>
+                        <td>Sportswear Fullset</td>
+                        <td>1</td>
+                        <td>RM119.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="total-amount">
+            Total Amount: RM1055
+        </div>
+
+        <div class="receipt-footer">
+            <a href="index.html">Return to Home</a>
+        </div>
+    </div>
+</body>
+</html>

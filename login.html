@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form action="" method="POST">
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <!-- Button will trigger form submission -->
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+  </div>
+
+  <script>
+    // JavaScript code to handle login validation
+    document.querySelector('form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevents form submission
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      // Simple validation
+      if (username === "akmal" && password === "12345") {
+        window.location.href = 'loginsuccess.html'; // Redirect on success
+      } else {
+        alert("Invalid login credentials!"); // Show error message
+      }
+    });
+  </script>
+</body>
+</html>
